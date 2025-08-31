@@ -7,5 +7,6 @@ SELECT
     from_warehouse,
     to_store,
     CAST(ship_date AS DATE) AS ship_date,
-    CAST(arrival_date AS DATE) AS arrival_date
+    CAST(arrival_date AS DATE) AS arrival_date,
+    current_date as processed_date
 FROM {{ source('raw', 'shipments') }}

@@ -7,5 +7,6 @@ SELECT
     status,
     refund_flag,
     CAST(amount AS NUMBER(10,2)) AS refund_amount,      
-    CAST(timestamp AS timestamp) AS timestamp
+    CAST(timestamp AS timestamp) AS timestamp,
+    current_date as processed_date
 FROM {{ source('raw', 'refunds') }}
