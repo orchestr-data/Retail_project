@@ -1,0 +1,44 @@
+
+version: 2
+
+models:
+  - name: cust_details_cur
+    description: "Customers details model"
+    columns:
+      - name: cust_id
+      - name: name
+      - name: email
+      - name: phone
+      - name: dob
+      - name: age
+      - name: gender
+      - name: signup_date
+      - name: age_at_signup
+      - name: cust_status
+        
+
+  - name: cust_address_cur
+    description: "Customers address model"
+    columns:
+      - name: cust_id
+      - name: address
+      - name: city
+      - name: state
+      - name: country
+      - name: postal_code
+      - name: latitude
+      - name: longitude
+
+
+  - name: cust_marketing_cur
+    description: "Customers Marketing model"
+    columns:
+      - name: cust_id
+      - name: market_opt_in
+      - name: channel
+      - name: last_login
+      - name: pref_pay_method
+      - name: loyalty_tier
+
+
+    
