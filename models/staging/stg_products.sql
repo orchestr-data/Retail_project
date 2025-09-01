@@ -6,5 +6,6 @@ SELECT
    trim(name) AS name,
    trim(category) AS category,
    CAST(price AS NUMBER(10,2)) AS price,      
-   CAST(created_at AS DATE) AS created_at
+   CAST(created_at AS DATE) AS created_at,
+   current_date as etl_loaded_at
 FROM {{ source('raw', 'products') }}
