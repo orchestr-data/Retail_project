@@ -8,5 +8,5 @@ SELECT
     refund_flag,
     CAST(amount AS NUMBER(10,2)) AS refund_amount,      
     CAST(timestamp AS timestamp) AS timestamp,
-    current_date as processed_date
+    current_date as etl_loaded_at
 FROM {{ source('raw', 'refunds') }}

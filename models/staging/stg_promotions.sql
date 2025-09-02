@@ -10,7 +10,7 @@ SELECT
     src:end_date::DATE as end_date,
     
     -- Add a simple calculated field
-    CURRENT_TIMESTAMP() as processed_at
+    current_date as etl_loaded_at
 
 FROM {{ source('raw', 'promotions') }}
 WHERE src IS NOT NULL

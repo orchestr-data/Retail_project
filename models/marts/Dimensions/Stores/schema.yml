@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+  - name: dim_stores
+    description: "stores details model"
+    columns:
+      - name: store_id
+      - name: location
+      - name: Region
+      - name: store_manager
+      - name: open_date
+      - name: store_type
