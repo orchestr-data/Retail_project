@@ -9,6 +9,7 @@ SELECT
    region,
    store_manager,
    open_date,
-   store_type
+   store_type,
+   CURRENT_TIMESTAMP() AS etl_loaded_at
 
 FROM {{ ref("stg_stores") }}

@@ -20,5 +20,5 @@ SELECT
     marketing_opt_in as mark_opt_in,
     acquisition_channel as channel,
     last_login_date as last_login,
-    current_date as etl_loaded_at
+    CURRENT_TIMESTAMP() as etl_loaded_at
 FROM {{ source('raw', 'customers') }}

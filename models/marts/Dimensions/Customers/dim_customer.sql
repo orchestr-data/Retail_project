@@ -44,7 +44,7 @@ SELECT
     END AS customer_activity_status,
     
     -- Audit fields
-    etl_loaded_at
+    CURRENT_TIMESTAMP() etl_loaded_at
 
 FROM {{ ref('stg_cust_details') }}
 

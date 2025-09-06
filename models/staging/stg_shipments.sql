@@ -8,5 +8,5 @@ SELECT
     to_store,
     CAST(ship_date AS DATE) AS ship_date,
     CAST(arrival_date AS DATE) AS arrival_date,
-    current_date as etl_loaded_at
+    CURRENT_TIMESTAMP() as etl_loaded_at
 FROM {{ source('raw', 'shipments') }}

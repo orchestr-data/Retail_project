@@ -1,10 +1,11 @@
 {{ config(schema = 'STAGING', materialized = 'table')}}
 
 SELECT
-    return_id,
-    transaction_id,
-    trim(reason_code) as reason_code,
-    return_date,
-    trim(resolution_status) as resolution_status,
-    current_date as processed_date
+    src:return_id::STRING AS return_id,
+    src:transaction_id::STRING AS transaction_id,
+    trim(src:reason_code::STRING) as reason_code,
+    trim(src:resolution_status::STRING) as resolution_status,
+    src:return_date::DATETIME AS return_date,
+    src:resolved_date::DATETIME AS resolved_date,
+    CURRENT_TIMESTAMP() as etl_loaded_at
 FROM {{ source('raw', 'returns') }}

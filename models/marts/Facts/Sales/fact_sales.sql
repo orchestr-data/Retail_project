@@ -26,7 +26,7 @@ select
         else 'Bulk Purchase'
     end as purchase_type,
 
-    current_date() as etl_loaded_at
+    CURRENT_TIMESTAMP() as etl_loaded_at
 
 from {{ ref('stg_sales') }}
 

@@ -23,7 +23,7 @@ SELECT
         ELSE 'Legacy'
     END AS product_age_group,
     
-    etl_loaded_at
+    CURRENT_TIMESTAMP() etl_loaded_at
     
 FROM {{ ref('stg_products') }}
 

@@ -14,7 +14,7 @@ SELECT
    to_store,
    ship_date,
    arrival_date,
-   etl_loaded_at
+   CURRENT_TIMESTAMP() AS etl_loaded_at
 
 FROM {{ ref("stg_shipments") }}
 

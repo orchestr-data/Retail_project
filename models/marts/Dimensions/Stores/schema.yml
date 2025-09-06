@@ -11,3 +11,4 @@ models:
       - name: store_manager
       - name: open_date
       - name: store_type
+      - name: etl_loaded_at
