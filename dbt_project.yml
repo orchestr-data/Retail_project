@@ -30,3 +30,7 @@ models:
     marts:                   # models/marts/*
       +schema: marts
       +materialized: table   # final business marts (facts/dims)
+
+    metrics:                 # models/metrics/*
+      +schema: metrics
+      +materialized: table   # business metric
