@@ -3,12 +3,12 @@ retail_project:
   outputs:
     dev:
       type: snowflake
-      account: "UFNPKVG-OKC98299"        # e.g. xy12345.us-east-1
-      user: "SAIROHITH"              # your Snowflake username
-      password: "wniwjmwx"      # or use keypair auth
-      role: "ACCOUNTADMIN"                 # or SYSADMIN while testing
+      account: "UFNPKVG-OKC98299"        
+      user: "SAIROHITH"              
+      password: "SRRNagella1998$"     
+      role: "ACCOUNTADMIN"                 
       warehouse: "COMPUTE_WH"
       database: "RETAIL_PROJECT"
-      schema: "RAW"                    # default schema (can override in models)
+      schema: "RAW"                    
       threads: 4
       client_session_keep_alive: False
