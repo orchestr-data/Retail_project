@@ -5,7 +5,7 @@ retail_project:
       type: snowflake
       account: "UFNPKVG-OKC98299"        # e.g. xy12345.us-east-1
       user: "SAIROHITH"              # your Snowflake username
-      password: "SRRNagella1998$"      # or use keypair auth
+      password: "wniwjmwx"      # or use keypair auth
       role: "ACCOUNTADMIN"                 # or SYSADMIN while testing
       warehouse: "COMPUTE_WH"
       database: "RETAIL_PROJECT"
