@@ -3,7 +3,8 @@
     materialized = "incremental",
     unique_key = "shipment_id",
     incremental_strategy='merge',
-    on_schema_change='sync'
+    on_schema_change='sync',
+    tags=['marts']
 )}}
 
 SELECT 

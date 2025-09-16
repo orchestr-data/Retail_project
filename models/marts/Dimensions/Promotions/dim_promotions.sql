@@ -1,6 +1,7 @@
 {{ config (
     schema = "marts",
-    materialized = "table"
+    materialized = "table",
+    tags=['marts']
 )}}
 
 SELECT 

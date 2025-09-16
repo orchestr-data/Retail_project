@@ -1,7 +1,8 @@
 {{ config(
     schema='marts',
     materialized='incremental',
-    unique_key='product_id'
+    unique_key='product_id',
+    tags=['marts']
 ) }}
 
 SELECT

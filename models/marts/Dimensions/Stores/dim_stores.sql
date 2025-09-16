@@ -1,7 +1,8 @@
 -- models/marts/dim_store.sql
 {{ config (
     schema = "marts",
-    materialized = "table"
+    materialized = "table",
+    tags=['marts']
 )}}
 
 SELECT 

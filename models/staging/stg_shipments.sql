@@ -1,4 +1,8 @@
-{{ config(schema = 'STAGING', materialized = 'table')}}
+{{ config(
+    schema='STAGING',
+    materialized='table',
+    tags=['staging']
+) }}
 
 SELECT
     shipment_id,
