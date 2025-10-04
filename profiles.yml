@@ -3,9 +3,9 @@ retail_project:
   outputs:
     dev:
       type: snowflake
-      account: "UFNPKVG-OKC98299"        
-      user: "SAIROHITH"              
-      password: "SRRNagella1998$"     
+      account: "**********"        
+      user: "**********"             
+      password: "**********"     
       role: "ACCOUNTADMIN"                 
       warehouse: "COMPUTE_WH"
       database: "RETAIL_PROJECT"
